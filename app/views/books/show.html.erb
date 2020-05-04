@@ -82,14 +82,8 @@
          <% end %>
 
 		<%= form_for [@book_post, @book_comment] do |f| %>
-    	<div class="row">
-        	<div class="col-sm-8">
             <%= f.text_area :comment, class: "form-control" %>
-        	</div>
-    		<div class="col-sm-2">
-   			 <%= f.submit "送信する", class: "btn btn-default" %>
-   		 	</div>
-   		</div>
+   				<%= f.submit "送信する", class: "btn btn-sm btn-primary" %>
 		<% end %>
 		</section>
 
